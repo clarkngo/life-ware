@@ -1,0 +1,68 @@
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    168deg,
+    #f0f2f8 0%,
+    #e4e8f0 30%,
+    #d8dfe8 55%,
+    #cdd6e2 100%
+  );
+  background-size: 100% 200%;
+  animation: drift 30s ease-in-out infinite;
+}
+
+.glow {
+  position: absolute;
+  width: 60vmin;
+  height: 60vmin;
+  right: -10%;
+  top: 20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(123, 158, 184, 0.2) 0%, transparent 70%);
+  animation: pulse 22s ease-in-out infinite alternate;
+}
+
+.pixelMist {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image: radial-gradient(rgba(140, 150, 170, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 30%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.65;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sky,
+  .glow {
+    animation: none;
+  }
+}

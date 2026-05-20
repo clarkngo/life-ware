@@ -1,0 +1,182 @@
+.figure {
+  margin: 2rem 0;
+}
+
+.caption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--charcoal-soft);
+  text-align: center;
+}
+
+.sandbox {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.host {
+  width: min(100%, 280px);
+  padding: 1.5rem;
+  border: 2px dashed rgba(123, 158, 184, 0.45);
+  border-radius: 20px;
+  background: rgba(123, 158, 184, 0.08);
+  text-align: center;
+}
+
+.hostLabel {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.vm {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(123, 158, 184, 0.35);
+  box-shadow: var(--shadow);
+}
+
+.vm span {
+  display: block;
+  font-weight: 600;
+}
+
+.vm small {
+  color: var(--charcoal-soft);
+  font-size: 0.85rem;
+}
+
+.pillars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+.pillars li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pillars button {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s var(--ease-calm), box-shadow 0.3s var(--ease-calm);
+}
+
+.pillars button:hover,
+.pillarActive {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow);
+}
+
+.pillars span {
+  display: block;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.pillars small {
+  font-size: 0.85rem;
+  color: var(--charcoal-soft);
+}
+
+.triAnchor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.anchor {
+  flex: 1 1 120px;
+  max-width: 140px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  background: rgba(139, 158, 174, 0.2);
+  border: 1px solid rgba(139, 158, 174, 0.35);
+  cursor: pointer;
+  color: inherit;
+  transition: background 0.3s var(--ease-calm), transform 0.3s var(--ease-calm);
+}
+
+.anchor:hover {
+  transform: scale(1.04);
+}
+
+.anchorActive {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: var(--shadow-hover);
+  transform: scale(1.06);
+}
+
+.tipPanel {
+  margin: 1rem 0 0;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+  min-height: 3.5rem;
+}
+
+.formula {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  padding: 1.5rem;
+  background: var(--cream-deep);
+  border-radius: 12px;
+}
+
+.formula span {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+  margin-bottom: 0.5rem;
+}
+
+.meter {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1rem;
+  max-width: 280px;
+  margin-inline: auto;
+}
+
+.bad {
+  flex: 1;
+  background: rgba(196, 120, 100, 0.4);
+}
+
+.good {
+  flex: 2;
+  background: rgba(143, 166, 143, 0.5);
+}

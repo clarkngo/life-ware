@@ -1,0 +1,9 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page > :last-child {
+  position: relative;
+  z-index: 1;
+}

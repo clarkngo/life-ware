@@ -1,0 +1,26 @@
+.main {
+  min-height: 100vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  font-size: 0.85rem;
+  color: var(--charcoal-soft);
+  transition: opacity 0.6s var(--ease-calm);
+}
+
+.tagline {
+  margin: 0 0 0.35rem;
+}
+
+.credit {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.footer.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

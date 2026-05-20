@@ -1,0 +1,123 @@
+.article {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.75rem, 4.5vw, 2.35rem);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--charcoal-soft);
+}
+
+.intro {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin: 0 0 0.5rem;
+}
+
+.chapter {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(140, 150, 170, 0.15);
+}
+
+.chapter h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.45rem;
+}
+
+.chapter > p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+}
+
+.figure {
+  margin: 1.5rem 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: var(--shadow);
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.figure figcaption {
+  padding: 0.65rem 1rem;
+  font-size: 0.78rem;
+  color: var(--charcoal-soft);
+  text-align: center;
+}
+
+.lesson {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(123, 158, 184, 0.2);
+}
+
+.lesson h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.lesson ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.lesson li {
+  line-height: 1.65;
+  color: var(--charcoal-soft);
+}
+
+.back {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(140, 150, 170, 0.15);
+  font-size: 0.9rem;
+}
+
+.back a {
+  color: var(--charcoal-soft);
+}
+
+.back a:hover {
+  color: var(--charcoal);
+}

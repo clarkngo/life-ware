@@ -1,0 +1,40 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.btn {
+  padding: 0.55rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--charcoal-soft);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: background 0.35s var(--ease-calm);
+}
+
+.btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn.on {
+  color: var(--charcoal);
+  background: rgba(123, 158, 184, 0.2);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hint {
+  font-size: 0.78rem;
+  color: var(--charcoal-soft);
+  font-style: italic;
+}

@@ -1,0 +1,46 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--cream-deep);
+  border-radius: 12px;
+  border: 1px solid rgba(140, 150, 170, 0.12);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+}
+
+.dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(140, 150, 170, 0.25);
+}
+
+.dot.filled {
+  background: var(--twilight);
+}
+
+.level {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.note {
+  flex: 1 1 100%;
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+}

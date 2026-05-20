@@ -1,0 +1,83 @@
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mist {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    175deg,
+    #f4f7f9 0%,
+    #e8eff3 35%,
+    #dce8ee 65%,
+    #d0dfe8 100%
+  );
+  background-size: 100% 180%;
+  animation: mistDrift 32s ease-in-out infinite;
+}
+
+.glow {
+  position: absolute;
+  width: 80vmin;
+  height: 50vmin;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.55) 0%,
+    transparent 70%
+  );
+  animation: glowPulse 20s ease-in-out infinite alternate;
+}
+
+.stream {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(123, 158, 184, 0.12) 15%,
+    rgba(123, 158, 184, 0.18) 50%,
+    rgba(123, 158, 184, 0.08) 85%,
+    transparent 100%
+  );
+  opacity: 0.6;
+}
+
+@keyframes mistDrift {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 40%;
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    opacity: 0.75;
+    transform: translateX(-50%) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mist,
+  .glow {
+    animation: none;
+  }
+}

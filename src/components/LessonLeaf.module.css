@@ -1,0 +1,125 @@
+.leaf {
+  position: relative;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  top: 1.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(123, 158, 184, 0.45);
+  box-shadow: 0 0 0 4px rgba(123, 158, 184, 0.08);
+}
+
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 6px 28px rgba(100, 130, 150, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.5s var(--ease-calm);
+}
+
+.card:has(.open) {
+  box-shadow: 0 10px 36px rgba(100, 130, 150, 0.12);
+}
+
+.trigger {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 0.2rem 1rem;
+  width: 100%;
+  padding: 1.15rem 1.35rem;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.theme {
+  grid-column: 1;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+}
+
+.title {
+  grid-column: 1;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.chevron {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--charcoal-soft);
+  line-height: 1;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.sections {
+  padding: 0 1.35rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.section h3 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+}
+
+.section p {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--charcoal);
+}
+
+.takeaway {
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(123, 158, 184, 0.15);
+}
+
+.takeaway p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.frameworkLink {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--twilight);
+  transition: opacity 0.25s;
+}
+
+.frameworkLink:hover {
+  opacity: 0.75;
+}
